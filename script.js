@@ -8,51 +8,54 @@
         const slVideoWrap = document.getElementById('sl-video-wrap');
         const slVideo     = document.getElementById('sl-video');
         let pct = 0;
-        let videoTriggered = false;
+        let barDone = false;
+        let videoDone = false;
 
-        function finishLoader() {
-          slBar.style.width = '100%';
-          slPct.textContent = '100';
+        // Start video immediately from the very beginning
+        slVideoWrap.classList.add('sl-vid-show');
+        slVideo.play().catch(() => {
+          // Autoplay blocked — mark video done so bar alone controls dismiss
+          slVideoWrap.classList.remove('sl-vid-show');
+          videoDone = true;
+        });
+
+        // When video ends, mark done and try to finish
+        slVideo.addEventListener('ended', () => {
+          slVideoWrap.classList.remove('sl-vid-show');
+          videoDone = true;
+          tryFinish();
+        }, { once: true });
+
+        function tryFinish() {
+          // Dismiss only when BOTH bar hits 100 AND video has ended
+          if (!barDone || !videoDone) return;
           setTimeout(() => {
             siteLoader.classList.add('sl-out');
             siteLoader.addEventListener('transitionend', () => {
               siteLoader.classList.add('sl-gone');
               onDone && onDone();
             }, { once: true });
-          }, 600);
+          }, 400);
         }
 
         function tick() {
-          // At 94% — pause, play video, resume after it ends
-          if (pct >= 94 && !videoTriggered) {
-            videoTriggered = true;
-            slBar.style.width = '94%';
-            slPct.textContent = '94';
-            slVideoWrap.classList.add('sl-vid-show');
-            slVideo.play().catch(() => {
-              // Autoplay blocked — skip video and finish
-              slVideoWrap.classList.remove('sl-vid-show');
-              finishLoader();
-            });
-            slVideo.addEventListener('ended', () => {
-              slVideoWrap.classList.remove('sl-vid-show');
-              finishLoader();
-            }, { once: true });
+          if (pct >= 100) {
+            slBar.style.width = '100%';
+            slPct.textContent = '100';
+            barDone = true;
+            tryFinish();
             return;
           }
-
-          if (pct >= 100) { finishLoader(); return; }
-
           pct++;
           slBar.style.width = pct + '%';
           slPct.textContent = pct;
-          // Eased delay: fast edges, slow middle
+          // Eased delay: fast edges, slow middle — total ~11s
           let delay;
-          if      (pct < 20)  delay = 25;
-          else if (pct < 40)  delay = 45;
-          else if (pct < 70)  delay = 72;
-          else if (pct < 90)  delay = 38;
-          else                delay = 20;
+          if      (pct < 20)  delay = 60;
+          else if (pct < 40)  delay = 110;
+          else if (pct < 70)  delay = 175;
+          else if (pct < 90)  delay = 95;
+          else                delay = 50;
           setTimeout(tick, delay);
         }
         setTimeout(tick, 350);
