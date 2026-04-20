@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karan kumar Nayak | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ══ SITE LOADER —══ -->
+  <div id="site-loader">
+    <!-- Video  -->
+    <div id="sl-video-wrap">
+      <video id="sl-video" src="/src/site-loader.mp4" muted playsinline></video>
+    </div>
+    <div class="sl-top">
+      <span class="sl-label">Portfolio</span>
+      <span class="sl-label">Vol.1 —</span>
+    </div>
+    <div class="sl-center">
+      <div class="sl-name-wrap">
+        <div class="sl-name">
+          <span class="sl-italic">Karan </span>Kumar
+        </div>
+        <div class="sl-name sl-name--delay">
+          <span class="sl-italic">Nayak</span>
+        </div>
+      </div>
+      <div class="sl-pct-wrap">
+        <span class="sl-pct-lbl">Loading — </span><span id="sl-pct">0</span>%
+      </div>
+    </div>
+    <div class="sl-bar-track"><div class="sl-bar" id="sl-bar"></div></div>
+    <div class="sl-bottom">
+      <span class="sl-label">Karan©</span>
+      <span class="sl-label">Bhubaneswar — 2026</span>
+    </div>
+  </div>
+
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
+
+  <div id="overlay">
+    <span id="ov-pct-wrap">Loading — <span id="ov-pct">0</span>%</span>
+    <div id="ov-title">Works</div>
+  </div>
+
+  <!-- ══ SHARED CHROME — always visible ══ -->
+  <div id="chrome">
+    <header class="chrome-header">
+      <div class="ch-left">
+        <span class="ch-star">✳</span>
+        <span>Open for any<br>collaborations and offers</span>
+      </div>
+      <div class="ch-center">Karan©</div>
+      <div class="ch-right">3rd Year<br>Student </div>
+    </header>
+
+    <div class="chrome-hero">
+      <h1 class="hero-title" id="hero-title">
+        <span class="italic">Karan </span>Ku.<sup class="t-sup">Nayak</sup>
+      </h1>
+    </div>
+
+    <div class="chrome-nav" id="chrome-nav">
+      <div class="nav-band">
+        <span class="nav-ghost" id="nav-ghost">Works</span>
+      </div>
+      <nav class="main-nav">
+        <div class="nav-links">
+          <a href="#" class="nav-link" data-page="home" data-name="Home">
+            <span class="n-num">00</span>Home
+          </a>
+          <a href="#" class="nav-link" data-page="works" data-name="Works">
+            <span class="n-num">01</span>Works
+          </a>
+          <a href="#" class="nav-link" data-page="about" data-name="About">
+            <span class="n-num">02</span>About
+          </a>
+          <a href="#" class="nav-link" data-page="experience" data-name="Experience">
+            <span class="n-num">03</span>Experience
+          </a>
+          <a href="#" class="nav-link" data-page="contact" data-name="Contact">
+            <span class="n-num">04</span>Contact
+          </a>
+        </div>
+        <span class="nav-copy">©2026</span>
+      </nav>
+    </div>
+  </div><!-- /chrome -->
+
+  <!-- ══ PAGES ══ -->
+  <div id="pages">
+
+    <!-- HOME -->
+    <div class="page active" id="page-home">
+      <div class="home-lower">
+        <video class="works-img-banner" src="/src/download1.mp4" autoplay loop muted playsinline></video>
+      </div>
+
+      <!-- Bio Section -->
+      <div class="home-bio">
+        <div class="home-bio-left">
+          <p class="home-bio-tag"><span class="home-bio-star">&#10003;</span> Based in Bhubaneswar, India</p>
+          <h2 class="home-bio-heading">I build things that<br><em>live at the edge of</em><br>AI &amp; design.</h2>
+          <p class="home-bio-body">I&rsquo;m Karan Kumar Nayak &mdash; a Computer Science student with a deep interest in machine learning, intelligent systems, and the interfaces that make them human. I&rsquo;m drawn to work that merges rigorous thinking with thoughtful craft, whether that&rsquo;s training models, designing products, or building the tools in between.<br><br>Currently in my final years of B.Tech, always looking for meaningful collaborations and problems worth solving.</p>
+          <a href="#" class="home-bio-cta" data-page="contact">Let&rsquo;s work together &rarr;</a>
+        </div>
+        <div class="home-bio-right">
+          <div class="home-bio-stat">
+            <span class="hbs-num">B.Tech</span>
+            <span class="hbs-label">Computer Science and Engineering  </span>
+          </div>
+          <div class="home-bio-stat">
+            <span class="hbs-num">AI / ML</span>
+            <span class="hbs-label">Primary Focus</span>
+          </div>
+          <div class="home-bio-stat">
+            <span class="hbs-num">6th</span>
+            <span class="hbs-label">Semester</span>
+          </div>
+          <div class="home-bio-stat">
+            <span class="hbs-num">Open</span>
+            <span class="hbs-label">For Collabs &mdash; 2025</span>
+          </div>
+          <div class="home-bio-disciplines">
+            <div class="hbd-label">Disciplines</div>
+            <div class="hbd-list">
+              <span class="chip">Machine Learning</span>
+              <span class="chip">Deep Learning</span>
+              <span class="chip">Data Analytics</span>
+              <span class="chip">Fullstack Web Dev</span>
+              <span class="chip">AI Engineering </span>
+              <span class="chip">Data Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKS -->
+    <div class="page" id="page-works">
+      <div class="sec-header">
+        <h2 class="sec-title">Works</h2>
+        <div class="sec-meta">Selected projects<br>2026 — present</div>
+      </div>
+      <video class="works-img-banner" src="/src/download2.mp4" autoplay loop muted playsinline></video>
+      <div class="works-grid">
+        <div class="work-card featured">
+          <div class="wf-icon">◈</div>
+          <div class="wf-body">
+            <div class="work-card-top">
+              <span class="work-num">00</span>
+              <span class="work-tag">IIITB Hackathon</span>
+            </div>
+            <div class="work-title">Mr. Clarke's Office</div>
+            <p class="work-desc">The system combines document intelligence, computer vision surveillance, and voice-triggered emergency detection into one integrated platform</p>
+            <div class="work-footer">
+              <span class="work-year">2026</span>
+              <span class="work-arrow">code - <a href="https://github.com/karankumarnayakwork-cpu/IIIT_Hackathon_prorject">↗</a></span>  
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-card-top"><span class="work-num">01</span><span class="work-tag">ML-Gesture Detection</span></div>
+          <div class="work-title">Silent Siren</div>
+          <p class="work-desc">Intuitive financial app for Gen Z users. End-to-end product design from research to
+            high-fidelity prototypes.</p>
+          <div class="work-footer"><span class="work-year">2026</span><span class="work-arrow">code - <a href="https://github.com/karankumarnayakwork-cpu/Silent-Siren">↗</a></span></div>
+        </div>
+        <div class="work-card">
+          <div class="work-card-top"><span class="work-num">02</span><span class="work-tag">AIML - openai whisper</span></div>
+          <div class="work-title">Voice Guardian — Listening when it matters the most</div>
+          <p class="work-desc">Voice Guardian is an intelligent, real-time safety system that uses AI-driven speech recognition to detect distress signals and automatically trigger emergency alerts.</p>
+          <div class="work-footer"><span class="work-year">2026</span><span class="work-arrow">code - <a href="https://github.com/karankumarnayakwork-cpu/Voice-Guardian-Listening-when-it-matters-most">↗</a></span></div>
+        </div>
+        <div class="work-card">
+          <div class="work-card-top"><span class="work-num">03</span><span class="work-tag">AIML - Deepface</span></div>
+          <div class="work-title">FaceRoll - AI</div>
+          <p class="work-desc">FaceRoll AI is a high-accuracy, low-latency facial recognition attendance system that captures facial embeddings from 5 distinct angles to maximize verification precision and minimize response time.</p>
+          <div class="work-footer"><span class="work-year">2025</span><span class="work-arrow">code - <a href="https://github.com/karankumarnayakwork-cpu/-FaceRoll-AI">↗</a></span></div>
+        </div>
+        <div class="work-card">
+          <div class="work-card-top"><span class="work-num">04</span><span class="work-tag">AIML-ollama,mistral,llava</span></div>
+          <div class="work-title">Viraasat - Guard the past preserve the future</div>
+          <p class="work-desc">An AI-powered application that identifies monuments from images and geographic location, featuring a built-in conversational chatbot — all running locally using Ollama with LLaVA (vision) and Mistral (language) models, served through a Streamlit web interface. </p>
+          <div class="work-footer"><span class="work-year">2025</span><span class="work-arrow">code - <a href="https://github.com/karankumarnayakwork-cpu/Viraasat---preserveThePastGuardTheFuture">↗</a></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="page" id="page-about">
+      <div class="sec-header">
+        <h2 class="sec-title">About</h2>
+        <div class="sec-meta">Karan kumar Nayak<br>Bhubaneswar</div>
+      </div>
+      <video class="works-img-banner" src="/src/download5.mp4" autoplay loop muted playsinline></video>
+      <div class="about-body">
+        <div>
+          <p class="about-bio">I'm Karan — an AI Engineer obsessed with the space where AI meets beauty.</p>
+          <p class="about-detail">Results-driven Computer Science undergraduate with hands-on experience in AI/ML engineering, computer vision, and data analytics. Proven ability to build and deploy end-to-end intelligent systems — from multimodal monument recognition to real-time gesture-based SOS and facial verification pipelines.<br><br>Core strengths include: Generative AI & LLMs, RAG & LangChain, Computer Vision (OpenCV, DeepFace), Machine Learning & Deep Learning, Data Analytics (Pandas, Power BI), and Cloud (Google Cloud Platform).</p>
+          <div class="skills-lbl">Programming Languages</div>
+          <div class="skills-list">
+            <span class="chip">Python</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Java</span>
+            <span class="chip">C</span>
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">C++</span>
+            
+          </div>
+          <hr>
+          <div class="skills-lbl">Frameworks &amp; Libraries</div>
+          <div class="skills-list">
+            <span class="chip">React</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">Flask</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">EJS</span>
+            <span class="chip">OpenCV</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">Keras</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">NumPy</span>
+            <span class="chip"> Pandas</span>
+            <span class="chip">Matplotlib</span>
+            <span class="chip">Streamlit</span>
+            
+          </div>
+          <hr>
+          <div class="skills-lbl">Databases</div>
+          <div class="skills-list">
+            <span class="chip">MySQL</span>
+            <span class="chip">MongoDB</span>
+          </div>
+          <hr>
+          <div class="skills-lbl">Tools & Platforms</div>
+          <div class="skills-list">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">Netlify</span>
+            <span class="chip">Vercel</span>
+            <span class="chip">Anaconda</span>
+            <span class="chip">Power BI</span>
+          </div>
+          <hr>
+        </div>
+        <div>
+          <div class="about-stat-row"><span class="asr-label">Based in</span><span class="asr-val">Bhubaneswar,Odisha,India</span></div>
+          <div class="about-stat-row"><span class="asr-label">Projects</span><span class="asr-val">40+</span></div>
+
+          <!-- Certifications -->
+          <div class="cert-section">
+            <div class="cert-heading">Certifications</div>
+
+            <div class="cert-card">
+              <div class="cert-top">
+                <span class="cert-issuer">IBM</span>
+                <span class="cert-year">2026</span>
+              </div>
+              <div class="cert-name">Fundamentals of AI Agents Using RAG and LangChain</div>
+             
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-top">
+                <span class="cert-issuer">IBM</span>
+                <span class="cert-year">2026</span>
+              </div>
+              <div class="cert-name">Python for Data Science, AI & Development</div>
+              
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-top">
+                <span class="cert-issuer">GFG</span>
+                <span class="cert-year">2025</span>
+              </div>
+              <div class="cert-name">Mastering Generative AI and ChatGPT</div>
+              
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-top">
+                <span class="cert-issuer">Apna College</span>
+                <span class="cert-year">2025</span>
+              </div>
+              <div class="cert-name">Fullstack Web Development</div>
+              
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-top">
+                <span class="cert-issuer">Apna College</span>
+                <span class="cert-year">2026</span>
+              </div>
+              <div class="cert-name">AIM/ML Engineer</div>
+              
+            </div>
+            <p>All the certificate credentials <a href="https://www.linkedin.com/in/karankumarnayak/details/certifications/">→</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="page" id="page-experience">
+      <div class="sec-header">
+        <h2 class="sec-title">My Experience</h2>
+        <div class="sec-meta">Journey so far<br>2025 — Present</div>
+      </div>
+      <video class="works-img-banner" src="/src/download4.mp4" autoplay loop muted playsinline></video>
+      <div class="exp-body">
+        <div class="exp-card">
+          <div class="exp-card-label">01</div>
+          <div class="exp-period">April 2025 — July 2025</div>
+          <div class="exp-role">Google Cloud Arcadde Facillator</div>
+          <div class="exp-company">Google Cloud Arcade</div>
+          <p class="exp-desc"> Participant – Google Cloud Arcade Competition | Google Cloud
+            I participated in the Google Cloud Arcade Competition, a gamified, skill-based learning challenge designed to deepen technical proficiency in cutting-edge cloud technologies.
+            💡 Outcome: Achieved Legend Milestone, Learned through labs</p>
+        </div>
+        <div class="exp-card">
+          <div class="exp-card-label">02</div>
+          <div class="exp-period">June 2025 — August 2025</div>
+          <div class="exp-role">AIML Intern</div>
+          <div class="exp-company">Internselite</div>
+          <p class="exp-desc">Applied ML algorithms and AI principles using python made Machine learning models to predict the outcomes for house price analysis and diabetese prediction</p>
+        </div>
+        <div class="exp-card">
+          <div class="exp-card-label">03</div>
+          <div class="exp-period">July 2025 — August 2025</div>
+          <div class="exp-role">Data Analytics Intern</div>
+          <div class="exp-company">Central Tool room and Training center</div>
+          <p class="exp-desc">collect, clean, and interpret structured data to help organisations make informed decisions. They bridge the gap between raw numbers and business strategy — translating complex datasets into clear reports, dashboards, and recommendations that stakeholders can act on.</p>
+        </div>
+        <div class="exp-card">
+          <div class="exp-card-label">04</div>
+          <div class="exp-period">July 2025 — Oct 2025</div>
+          <div class="exp-role">Contributor</div>
+          <div class="exp-company">Girlscript Summer of code </div>
+          <p class="exp-desc">a 3-month open source program that mentors beginners into real-world software development. Contributors work on selected open source projects under the guidance of experienced mentors, submitting pull requests, fixing bugs, adding features, and improving documentation to earn points and recognition</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="page" id="page-contact">
+      <div class="sec-header">
+        <h2 class="sec-title">Contact Me</h2>
+        <div class="sec-meta">Let's work together<br>Always open to talk</div>
+      </div>
+      <img class="contact-img" src="/src/contact image.png" ><div class="contact-body">
+      <div>
+        <h3 class="contact-heading">Got a project in mind?</h3>
+        <p class="contact-sub">Whether it's a brand, a product, or something entirely new — I'd love to hear about it.
+          Drop a message or reach out directly.</p>
+        <a href="mailto:hello@huyml.com" class="contact-email-link">karankumarnayakwork@gmail.com</a>
+        <div class="contact-links-col">
+        
+          <a href="#" class="contact-link-row"><span class="cll">Github</span><span class="clv">karankumarnayak-cpu</span><span
+              class="cla">↗</span></a>
+          <a href="www.linkedin.com/in/karankumarnayak" class="contact-link-row"><span class="cll">LinkedIn</span><span class="clv">Karan Kumar Nayak</span><span
+              class="cla">↗</span></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="cf">
+          <label>Your name</label>
+          <input type="text" name="name" placeholder="e.g. Jane Nguyen">
+        </div>
+        <div class="cf">
+          <label>Email address</label>
+          <input type="email" name="email" placeholder="jane@studio.com">
+        </div>
+        <div class="cf">
+          <label>Project type</label>
+          <input type="text" name="project" placeholder="Branding, UI/UX, Motion…">
+        </div>
+        <div class="cf">
+          <label>Tell me about it</label>
+          <textarea rows="5" name="message" placeholder="What are you building?"></textarea>
+        </div>
+        <button class="cf-btn" type="submit">Send message →</button>
+      </form>
+    </div>
+  </div>
+
+  </div><!-- /pages -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
