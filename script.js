@@ -81,6 +81,10 @@
         const el = e.target.closest('a,button,[data-page]');
         if (el) { dot.style.width = '14px'; dot.style.height = '14px'; }
         else { dot.style.width = '7px'; dot.style.height = '7px'; }
+
+        const inFooter = e.target.closest('.site-footer');
+        dot.style.background = inFooter ? '#F2F0EB' : 'var(--ink)';
+        ring.style.borderColor = inFooter ? 'rgba(242,240,235,.4)' : 'rgba(26,24,20,.25)';
       });
 
       /* Page titles per section */
