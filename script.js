@@ -86,8 +86,8 @@
       /* Page titles per section */
       const titles = {
         home: '<span class="italic">Karan</span> Ku.<sup class="t-sup">Nayak</sup>',
-        works: '<span class="italic">My</span> Works<sup class="t-sup">01</sup>',
-        about: '<span class="italic">About</span> Me<sup class="t-sup">02</sup>',
+        works: '<span class="italic">Works</span><sup class="t-sup">01</sup>',
+        about: '<span class="italic">About</span><sup class="t-sup">02</sup>',
         experience: '<span class="italic">Experience</span><sup class="t-sup">03</sup>',
         contact: '<span class="italic">Con</span>tact<sup class="t-sup">04</sup>',
       };
