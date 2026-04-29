@@ -11,13 +11,13 @@
     <priority>1.0</priority>
     <!-- Profile photo -->
     <image:image>
-      <image:loc>https://karan-kumar-nayak-portfolio.vercel.app/src/karan-profile.jpeg</image:loc>
+      <image:loc>https://karan-kumar-nayak-portfolio.vercel.app/src/og.png</image:loc>
       <image:title>Karan Kumar Nayak — AI Engineer and B.Tech CSE Student, Bhubaneswar</image:title>
       <image:caption>Karan Kumar Nayak, AI Engineer and Computer Science student specialising in ML, Computer Vision, and LLMs.</image:caption>
     </image:image>
     <!-- OG / social preview image -->
     <image:image>
-      <image:loc>https://karan-kumar-nayak-portfolio.vercel.app/src/og.png</image:loc>
+      <image:loc>https://karan-kumar-nayak-portfolio.vercel.app/src/portfolio-2.png</image:loc>
       <image:title>Karan Kumar Nayak Portfolio — AI Engineer</image:title>
       <image:caption>Portfolio of Karan Kumar Nayak — building things at the edge of AI and design.</image:caption>
     </image:image>
